@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  @apply text-gray-800;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mood-happy {
+  @apply bg-gradient-to-br from-amber-50/70 to-yellow-50/70;
+}
+
+.mood-calm {
+  @apply bg-gradient-to-br from-blue-50/70 to-indigo-50/70;
+}
+
+.mood-anxious {
+  @apply bg-gradient-to-br from-rose-50/70 to-pink-50/70;
+}
+
+.mood-neutral {
+  @apply bg-gradient-to-br from-gray-50/70 to-slate-50/70;
+}
+
+.floating-nav {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth background transition */
+.bg-transition {
+  transition: background 0.8s ease;
+}
